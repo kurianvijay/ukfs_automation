@@ -18,6 +18,7 @@ public class GetAQuotePage {
 	
 	WebDriver driver;
 	
+	
 	By submitButton = By.xpath("//input[@id='submit-inquiry']");
 	
 	By yourNameError = By.xpath("//div[@id='advice-required-entry-firstname']");
