@@ -16,12 +16,23 @@ public class UFS_TA_04_TC_CV_VJ_002 {
 		driver.manage().window().maximize();
 		
 		Actions actions= new Actions(driver);
+		//*[@id="nav"]/li[2]/a[1]/span[1]
+//		xpath=//div[8]/div/div/div/div/ul/li[2]/a/span
 				
-		//WebElement menuOption = driver.findElement(By.xpath("//span[@style='color:;' and text()='Contract Vinyl']"));
-		//driver.findElement(By.xpath("//*[@id='nav']/li[2]/a/span[text()='Contract Vinyl']"));
-		//WebElement menuOption = driver.findElement(By.xpath("//*[@id='nav']/li[2]/a/span[text()='Contract Vinyl']")); 
 		
-		WebElement menuOption = driver.findElement(By.xpath("//span[@style='color:;' and text()='Contract Vinyl']"));
+//
+		
+		WebElement menuOption = driver.findElement(By.cssSelector("ul#nav > li:nth-of-type(2) > a > span"));
+		
+
+		
+//		element = driver.find_element_by_css('div[class*="loadingWhiteBox"]')
+//				driver.execute_script("arguments[0].click();", element)
+//		driver.findElement(By.xpath("//*[@id='nav']/li[2]/a/span[text()='Contract Vinyl']"));
+//		
+//		WebElement menuOption = driver.findElement(By.xpath("//*[@id='nav']/li[2]/a/span[text()='Contract Vinyl']")); 
+//		
+//		WebElement menuOption = driver.findElement(By.xpath("//span[@style='color:;' and text()='Contract Vinyl']"));
 		
 		actions.moveToElement(menuOption).build().perform();
 		System.out.println("Mouse Hover on 'Contract Vinyl' is done");

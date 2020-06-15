@@ -49,7 +49,7 @@ public class GetAQuotePage {
 	By servicedesc = By.id("desc");
 	
 	By servicereqError = By.xpath(".//*[@id='advice-validate-one-required-by-name-services[]']");
-	By servicereq1 = By.xpath(".//*[@class='checkbox'][1]");
+	By servicereq = By.xpath(".//*[@class='checkbox'][1]");
 	
 	
 	public GetAQuotePage(WebDriver driver)
@@ -60,7 +60,7 @@ public class GetAQuotePage {
 
 	public void selectOneOption()
 	{
-		List<WebElement> serviceReq= driver.findElements(servicereq1);
+		List<WebElement> serviceReq1= driver.findElements(servicereq);
 		
 		serviceReq.get(1).click();
 		
@@ -68,10 +68,10 @@ public class GetAQuotePage {
 	
 	public void selectAllOptions()
 	{
-		List<WebElement> serviceReq= driver.findElements(servicereq1);
+		List<WebElement> serviceReq1= driver.findElements(servicereq);
 		
 		for(int i=0;i<=11;i++) {
-			serviceReq.get(i).click();
+			serviceReq1.get(i).click();
 		}
 		
 	}

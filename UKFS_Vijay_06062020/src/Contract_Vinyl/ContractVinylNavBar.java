@@ -20,20 +20,20 @@ public class ContractVinylNavBar {
 	
 	Actions actions= new Actions(driver);
 	
-	By ContractVinylButton = By.xpath("//*[@id='nav']/li[2]/a/span[text()='Contract Vinyl']");
+	By ContractVinylButton = By.linkText("Contract Vinyl");
 	
 	//*[@id="nav"]/li[2]/a[1]/span[1]
 
 	
-//	findElement(By.ByLinkText("Contract Vinyl")).click();
+//	findElement(By.linkText("Contract Vinyl")).click();
 	
 	By altroMarine20 = By.xpath("//span[@style='color:;  ' and text()='ALTRO MARINE 20 ']");
 	
-//	By altroClassic25 = By.xpath("//span[@style='color:;  ' and text()='ALTRO MARINE 20 ']");
+//	By altroClassic25 = By.xpath("//span[@style='color:;  ' and text()='ALTRO CLASSIC 25 ']");
 //
-//	By altroStronghold30 = By.xpath("//span[@style='color:;  ' and text()='ALTRO MARINE 20 ']");
+//	By altroStronghold30 = By.xpath("//span[@style='color:;  ' and text()='ALTRO STRONGHOLD 30']");
 //
-//	By polySafeWoodFX = By.xpath("//span[@style='color:;  ' and text()='ALTRO MARINE 20 ']");
+//	By polySafeWoodFX = By.xpath("//span[@style='color:;  ' and text()='POLYSAFE WOOD FX PUR']");
 //
 //	By altroWalkway20 = By.xpath("//span[@style='color:;  ' and text()='ALTRO MARINE 20 ']");
 //
