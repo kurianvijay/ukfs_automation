@@ -29,24 +29,18 @@ WebDriver driver = new FirefoxDriver();
 		driver.manage().window().maximize();
 	}
 	
-//	@AfterTest
-//public void afterTest() {
-//		driver.quit();
-//	}
+	@AfterTest
+	public void afterTest() {
+		driver.quit();
+	}
 	
 	@Test
 	public void verifyPageTitleContractVinyl(){
 		
-//////		System.setProperty("webdriver.gecko.driver", "/Users/vijaykurian/Downloads/Automation/Drivers.geckodriver");
-//		ContractVinylNavBar contractVinylPageTitle = new ContractVinylNavBar(driver);
+		HomePage contractVinylPageTitle = new HomePage(driver);
+		contractVinylPageTitle.navContractVinyl();
+		
 //		contractVinylPageTitle.hoverOverContractVinylButton();
-////		contractVinylPageTitle.clickContractVinylButton();
-		
-		HomePage obj = new HomePage(driver);
-		obj.navContractVinyl();
-		
-		ContractVinylNavBar contractVinylPageTitle = new ContractVinylNavBar(driver);
-		contractVinylPageTitle.hoverOverContractVinylButton();
 		
 		assertTrue(contractVinylPageTitle.checkPageTitleContractVinyl());
 		
@@ -55,7 +49,7 @@ WebDriver driver = new FirefoxDriver();
 	@Test 
 	public void verifyPageTitleAltroMarine20() {
 		
-		ContractVinylNavBar altroMarine20PageTitle = new ContractVinylNavBar(driver);
+		HomePage altroMarine20PageTitle = new HomePage(driver);
 		altroMarine20PageTitle.hoverOverContractVinylButton();
 		altroMarine20PageTitle.clickAltroMarine20();
 		
