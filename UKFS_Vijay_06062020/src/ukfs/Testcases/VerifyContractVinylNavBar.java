@@ -34,28 +34,28 @@ WebDriver driver = new FirefoxDriver();
 		driver.quit();
 	}
 	
-	@Test
-	public void verifyPageTitleContractVinyl(){
-		
-		HomePage contractVinylPageTitle = new HomePage(driver);
-		contractVinylPageTitle.navContractVinyl();
-		
-//		contractVinylPageTitle.hoverOverContractVinylButton();
-		
-		assertTrue(contractVinylPageTitle.checkPageTitleContractVinyl());
-		
-	}
-	
-	@Test 
-	public void verifyPageTitleAltroMarine20() {
-		
-		HomePage altroMarine20PageTitle = new HomePage(driver);
-		altroMarine20PageTitle.hoverOverContractVinylButton();
-		altroMarine20PageTitle.clickAltroMarine20();
-		
-		assertTrue(altroMarine20PageTitle.checkPageTitleAltroMarine20());
-		
-	}
+//	@Test
+//	public void verifyPageTitleContractVinyl(){
+//		
+//		HomePage contractVinylPageTitle = new HomePage(driver);
+//		contractVinylPageTitle.navContractVinyl();
+//		
+////		contractVinylPageTitle.hoverOverContractVinylButton();
+//		
+//		assertTrue(contractVinylPageTitle.checkPageTitleContractVinyl());
+//		
+//	}
+//	
+//	@Test 
+//	public void verifyPageTitleAltroMarine20() {
+//		
+//		HomePage altroMarine20PageTitle = new HomePage(driver);
+//		altroMarine20PageTitle.hoverOverContractVinylButton();
+//		altroMarine20PageTitle.clickAltroMarine20();
+//		
+//		assertTrue(altroMarine20PageTitle.checkPageTitleAltroMarine20());
+//		
+//	}
 	
 
 }

@@ -62,7 +62,7 @@ public class GetAQuotePage {
 	{
 		List<WebElement> serviceReq1= driver.findElements(servicereq);
 		
-		serviceReq.get(1).click();
+		serviceReq1.get(1).click();
 		
 	}
 	
