@@ -33,15 +33,11 @@ public class VerifyGetQuoteForm {
 		home.navgetAQuote();
 	}
 	
-	@AfterTest
-	public void afterTest() {
-		driver.quit();
-	}
 	
 	@Test
 	public void verifyPageTitle() {
 		
-		HomePage home = new HomePage(driver);
+		GetAQuotePage home = new GetAQuotePage(driver);
 		assertTrue(home.checkPageTitle());
 		
 	}
@@ -287,6 +283,11 @@ public class VerifyGetQuoteForm {
 			System.out.println("Exception caught - "+e);
 		}
 	
+	}
+	
+	@AfterTest
+	public void afterTest() {
+		driver.quit();
 	}
 }
 

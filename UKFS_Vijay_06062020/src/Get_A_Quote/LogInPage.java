@@ -34,6 +34,12 @@ public class LogInPage {
 		driver.findElement(password).sendKeys("Welcome123");
 	}
 	
+	public void clickLogInButton() 
+	{
+		driver.findElement(logInButton).click();
+	}
+	
+	
 	
 
 }

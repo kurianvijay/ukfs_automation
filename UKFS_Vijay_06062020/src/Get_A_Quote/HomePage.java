@@ -19,7 +19,12 @@ public class HomePage {
 	
 	WebDriver driver;
 	
-	Actions actions= new Actions(driver);
+	public HomePage(WebDriver driver) 
+	{
+		this.driver = driver;
+	}
+	
+	//Actions actions= new Actions(driver);
 	
 	By getAQuote = By.xpath("//a[contains(text(),'Get a Quote')]");
 	
@@ -47,10 +52,7 @@ public class HomePage {
 	
 	
 	
-	public HomePage(WebDriver driver) 
-	{
-		this.driver = driver;
-	}
+	
 	
 	public void navgetAQuote()
 	{
@@ -64,12 +66,12 @@ public class HomePage {
 	public boolean checkPageTitle()
 	{
 		System.out.println(driver.getTitle());
-		boolean val = driver.getTitle().equalsIgnoreCase("Free quotes from London Carpet Fitters");
+		boolean val = driver.getTitle().contains("Flooring sale");
 		System.out.println();
 		return val;
 	}
 	
-	public void clickOnLogInButton()
+	public void clickOnHeaderLogInLink()
 	{
 		List<WebElement> logInButton= driver.findElements(LogIn);
 		

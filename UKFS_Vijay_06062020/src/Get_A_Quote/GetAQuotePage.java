@@ -57,6 +57,13 @@ public class GetAQuotePage {
 		this.driver = driver;
 	}
 	
+	public boolean checkPageTitle()
+	{
+		System.out.println(driver.getTitle());
+		boolean val = driver.getTitle().contains("Free quotes from London Carpet Fitters");
+		System.out.println();
+		return val;
+	}
 
 	public void selectOneOption()
 	{

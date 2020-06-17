@@ -16,11 +16,6 @@ public class UFS_TA_04_TC_CV_VJ_002 {
 		driver.manage().window().maximize();
 		
 		Actions actions= new Actions(driver);
-		//*[@id="nav"]/li[2]/a[1]/span[1]
-//		xpath=//div[8]/div/div/div/div/ul/li[2]/a/span
-				
-		
-//
 		
 		WebElement menuOption = driver.findElement(By.cssSelector("ul#nav > li:nth-of-type(2) > a > span"));
 		
