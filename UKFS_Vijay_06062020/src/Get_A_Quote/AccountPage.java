@@ -14,5 +14,12 @@ public class AccountPage {
 	
 	WebDriver driver;
 	
-	By corkWallTiles = By.linkText("");
+	public HomePage(WebDriver driver) 
+	{
+		this.driver = driver;
+	}
+	
+	By corkWallTiles = By.linkText("Cork & Wall Tiles");
+	
+	
 }
