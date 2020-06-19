@@ -9,7 +9,6 @@ import java.util.concurrent.TimeUnit;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.interactions.Actions;
 
 /**
  * @author vijaykurian
@@ -23,8 +22,6 @@ public class HomePage {
 	{
 		this.driver = driver;
 	}
-	
-	//Actions actions= new Actions(driver);
 	
 	By getAQuote = By.xpath("//a[contains(text(),'Get a Quote')]");
 	
@@ -51,9 +48,6 @@ public class HomePage {
 
 	
 	
-	
-	
-	
 	public void navgetAQuote()
 	{
 		List<WebElement> getAQuote1= driver.findElements(getAQuote);
@@ -67,7 +61,7 @@ public class HomePage {
 	{
 		System.out.println(driver.getTitle());
 		boolean val = driver.getTitle().contains("Flooring sale");
-		System.out.println();
+		System.out.println(val);
 		return val;
 	}
 	
@@ -76,6 +70,7 @@ public class HomePage {
 		List<WebElement> logInButton= driver.findElements(LogIn);
 		
 		logInButton.get(1).click();
+		System.out.println("After clicking Login link");
 	}
 	
 	

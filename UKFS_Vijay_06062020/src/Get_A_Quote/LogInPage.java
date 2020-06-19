@@ -37,6 +37,8 @@ public class LogInPage {
 	public void clickLogInButton() 
 	{
 		driver.findElement(logInButton).click();
+		System.out.println("After entering login details and clicking login");
+		
 	}
 	
 	

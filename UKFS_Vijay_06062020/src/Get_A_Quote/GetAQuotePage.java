@@ -18,6 +18,11 @@ public class GetAQuotePage {
 	
 	WebDriver driver;
 	
+	public GetAQuotePage(WebDriver driver)
+	{
+		this.driver = driver;
+	}
+	
 	
 	By submitButton = By.xpath("//input[@id='submit-inquiry']");
 	
@@ -52,10 +57,7 @@ public class GetAQuotePage {
 	By servicereq = By.xpath(".//*[@class='checkbox'][1]");
 	
 	
-	public GetAQuotePage(WebDriver driver)
-	{
-		this.driver = driver;
-	}
+	
 	
 	public boolean checkPageTitle()
 	{
