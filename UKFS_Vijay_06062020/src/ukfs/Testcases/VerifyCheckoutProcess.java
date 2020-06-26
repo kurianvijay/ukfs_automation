@@ -42,25 +42,25 @@ public class VerifyCheckoutProcess {
 		loginVariable.enterPassword();
 		loginVariable.clickLogInButton();
 		
-//		userAccount accountVariable = new userAccount(driver);
-//		accountVariable.hovercorkwalltilesandClickVitaDecor();
-//		accountVariable.addToCart();
-//		accountVariable.goToCheckoutMain();
+		userAccount accountVariable = new userAccount(driver);
+		accountVariable.hovercorkwalltilesandClickVitaDecor();
+		accountVariable.addToCart();
+		accountVariable.goToCheckoutMain();
 		
 		
-		WebElement menuOption = driver.findElement(By.xpath("//*[@id='nav']/li[6]/a/span[text()='Cork & Wall Tiles']"));
-		
-		actions.moveToElement(menuOption).perform();
-		
-		
-		WebElement vitaDecorOption = driver.findElement(By.xpath("//ul/li[6]/div/ul/ul/div/li[4]/a/span"));
-		
-		vitaDecorOption.click();
-		WebElement cart = driver.findElement(By.xpath("//div[2]/div/button/span/span"));
-		cart.click();
-		
-		driver.findElement(By.xpath("//div[3]/div/div/div/div")).click();
-		driver.findElement(By.xpath("//span/span[1]")).click();
+//		WebElement menuOption = driver.findElement(By.xpath("//*[@id='nav']/li[6]/a/span[text()='Cork & Wall Tiles']"));
+//		
+//		actions.moveToElement(menuOption).perform();
+//		
+//		
+//		WebElement vitaDecorOption = driver.findElement(By.xpath("//ul/li[6]/div/ul/ul/div/li[4]/a/span"));
+//		
+//		vitaDecorOption.click();
+//		WebElement cart = driver.findElement(By.xpath("//div[2]/div/button/span/span"));
+//		cart.click();
+//		
+//		driver.findElement(By.xpath("//div[3]/div/div/div/div")).click();
+//		driver.findElement(By.xpath("//span/span[1]")).click();
 		
 		
 	}
